@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fdfdfd;
+}
+
+header {
+  background: linear-gradient(to right, #778899, #2a5298);
+  color: white;
+  padding-bottom: 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffdd57;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero span {
+  color: #ffdd57;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ffdd57;
+  color: #1e3c72;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ffc107;
+}
+
+#about{
+    background: linear-gradient(to right, #778899, #2a5298);
+  color: white;
+  padding-bottom: 60px;
+  font-weight: bolder;
+}
+
+#about p{
+    color: black;
+    font-size: larger;
+}
+
+section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #1e3c72;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+  background-color: #FFA07A;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+#projects{
+    background: linear-gradient(to right, #778899, #2a5298);
+  color: white;
+  padding-bottom: 60px;
+  font-weight: bold;
+}
+footer {
+  background: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 10px;
+}
+
+#contact{
+    background: linear-gradient(to right,#7FFF00,#006400);
+    color: white;
+    padding-bottom: 40px;
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
